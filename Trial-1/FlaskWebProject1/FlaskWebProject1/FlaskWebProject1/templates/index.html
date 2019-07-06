@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Simple Search Engine</h1>
+    <p class="lead">Enter a boolean query (AND --> *, OR --> +, NOT --> !, "" --> phrases).</p>
+</div>
+
+    <form method="POST">
+        <input name="u">
+        <input type="submit" value="Search">
+    </form>
+
+{% endblock %}
